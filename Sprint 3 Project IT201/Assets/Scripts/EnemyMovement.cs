@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -10,23 +11,22 @@ public class EnemyMovement : MonoBehaviour
     public Transform Enemypos;
     // Added Petpos Transform
     public Transform Petpos;
-    Transform baseLocation;
+    Vector3 baseLocation;
     NavMeshAgent agent;
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         agent = GetComponent<NavMeshAgent>();
-        baseLocation = transform;
+        baseLocation = Enemypos.position;
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         // Added a check for distance between Player and Enemy
-        if ((Vector3.Distance(Playerpos.position, Enemypos.position) < 10) || (Vector3.Distance(Petpos.position, Enemypos.position) < 10)) 
-            agent.destination = Playerpos.position - new Vector3(0,0,0);
-        else if (Vector3.Distance(baseLocation.position, Enemypos.position) > 0.1f)
-            agent.destination = baseLocation.position;
-        
+        if ((Vector3.Distance(Playerpos.position, Enemypos.position) < 10) || (Vector3.Distance(Petpos.position, Enemypos.position) < 10)) {
+            agent.destination = Playerpos.position; 
+        }
+        else {
+            agent.destination = baseLocation;
+        }
     }
 }

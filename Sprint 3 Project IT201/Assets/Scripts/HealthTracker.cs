@@ -7,22 +7,29 @@ using UnityEngine.UI;
 public class HealthTracker : MonoBehaviour
 {
     public int Health = 100;
+    public int damage;
     public GameObject LossText;
-    void Start()
-    {
+    public TextMeshProUGUI HealthText;
+    public AudioSource PlayerHit;
+    void Start() {
         LossText.SetActive(false);
+        HealthText.color = Color.green;
     }
 
-    void Update()
-    {
+    void Update() {
         if (Health <= 0) {
             Time.timeScale = 0;
             LossText.SetActive(true);
+            HealthText.color = Color.red;
         }
+
+        HealthText.text = "Health: " + Health.ToString();
     }
 
-    void OnCollisionEnter (Collision other) {
-        if (other.gameObject.CompareTag("Player"))
-            Health = Health - 10;
+    void OnTriggerEnter (Collider other) {
+        if (other.gameObject.tag == "Enemy") {
+            Health -= damage;
+            PlayerHit.Play();
+        }
     }
 }
