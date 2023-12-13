@@ -4,6 +4,9 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
+
+// add bruenian equation or w/e to make them randomly walk around
+
 public class EnemyMovement : MonoBehaviour
 {
     public Transform Playerpos;

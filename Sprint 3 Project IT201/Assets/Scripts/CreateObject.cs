@@ -7,8 +7,7 @@ public class CreateObject : MonoBehaviour
     public float distance = 0f;
     public GameObject arrow1;
     public AudioSource arrowNoise;
-    float lastArrowTime = .5f;
-
+    public float lastArrowTime = .5f;
     void Update()
     {
         if ((Time.time - lastArrowTime) >= .5f && (Input.GetMouseButton(0) || Input.GetMouseButton(1)))

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class HealthTracker : MonoBehaviour
 {
-    public int Health = 100;
+    public int Health = 90;
     public int damage;
     public GameObject LossText;
     public TextMeshProUGUI HealthText;
