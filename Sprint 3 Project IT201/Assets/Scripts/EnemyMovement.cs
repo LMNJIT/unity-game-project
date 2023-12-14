@@ -14,6 +14,7 @@ public class EnemyMovement : MonoBehaviour
     public Transform Enemypos;
     // Added Petpos Transform
     public Transform Petpos;
+    public int LookRadius;
     Vector3 baseLocation;
     NavMeshAgent agent;
     // Start is called before the first frame update
@@ -25,7 +26,7 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update() {
         // Added a check for distance between Player and Enemy
-        if ((Vector3.Distance(Playerpos.position, Enemypos.position) < 10) || (Vector3.Distance(Petpos.position, Enemypos.position) < 10)) {
+        if ((Vector3.Distance(Playerpos.position, Enemypos.position) < LookRadius) || (Vector3.Distance(Petpos.position, Enemypos.position) < LookRadius)) {
             agent.destination = Playerpos.position; 
         }
         else {
