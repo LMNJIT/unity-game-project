@@ -8,9 +8,10 @@ public class CreateObject : MonoBehaviour
     public GameObject arrow1;
     public AudioSource arrowNoise;
     public float lastArrowTime = .5f;
+    public float arrowSpeed;
     void Update()
     {
-        if ((Time.time - lastArrowTime) >= .5f && (Input.GetMouseButton(0) || Input.GetMouseButton(1)))
+        if ((Time.time - lastArrowTime) >= arrowSpeed && (Input.GetMouseButton(0) || Input.GetMouseButton(1)))
         {
             arrowNoise.Play();
             
