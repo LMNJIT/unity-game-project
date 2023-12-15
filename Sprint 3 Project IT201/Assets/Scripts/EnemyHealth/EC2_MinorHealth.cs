@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class EC2_MinorHealth : MonoBehaviour
 {
+    public int difficultyModifier = 1; 
     public int Health = 100;
     public int damage = 20;
     public GameObject Enemy;

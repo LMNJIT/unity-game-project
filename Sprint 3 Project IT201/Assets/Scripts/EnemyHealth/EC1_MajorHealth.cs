@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class EC1_MajorHealth : MonoBehaviour
 {
+    public int difficultyModifier = 1; 
     public int Health = 120;
     public int damage = 20;
     public GameObject Enemy;

@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Arrow
   - Boss
+  - Minor
+  - Major
   layers:
   - Default
   - TransparentFX

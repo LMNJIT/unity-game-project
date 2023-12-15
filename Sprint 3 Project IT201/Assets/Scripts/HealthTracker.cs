@@ -27,8 +27,16 @@ public class HealthTracker : MonoBehaviour
     }
 
     void OnTriggerEnter (Collider other) {
-        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Boss") {
-            Health -= damage;
+        if (other.gameObject.tag == "Minor") {
+            Health -= 10;
+            PlayerHit.Play();
+        }
+        else if (other.gameObject.tag == "Major") {
+            Health -= 20;
+            PlayerHit.Play();
+        }
+        else if (other.gameObject.tag == "Boss") {
+            Health -= 40;
             PlayerHit.Play();
         }
     }

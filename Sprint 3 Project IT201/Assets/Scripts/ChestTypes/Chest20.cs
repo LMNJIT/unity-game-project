@@ -13,6 +13,7 @@ public class Chest20 : MonoBehaviour
     public AudioSource ChestOpen;
     public CreateObject referenceArrow;
     public HealthTracker referenceHealth;
+    public GameObject ChestText;
     public int chestVal;
     void Start() {
         Vector3 aboveChestPosition = Chest.position + new Vector3(0f, 1.5f, 0); // Adjust the Y value as needed
@@ -20,15 +21,18 @@ public class Chest20 : MonoBehaviour
 
         // Set the rotation of the floating text to face the same direction as the chest
         FloatingTextInstance.transform.rotation = Chest.rotation * Quaternion.Euler(0,180,0);
+        ChestText.SetActive(false);
     }
 
     void Update() {
         if (Vector3.Distance(Player.position, Chest.position) < 10 && Input.GetKeyDown(KeyCode.E) && Int16.Parse(Currency.text) >= chestVal) {
             Currency.text = (Int16.Parse(Currency.text) - chestVal).ToString();
             ChestOpen.Play();
-            referenceHealth.Health = 100;
+            referenceArrow.arrowSpeed -= .025f;
             Destroy(ChestObject);
             Destroy(FloatingTextInstance);
+            ChestText.SetActive(true);
+            Destroy(ChestText, 3);
         }
     }
 }

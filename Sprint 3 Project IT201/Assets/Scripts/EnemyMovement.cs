@@ -9,6 +9,7 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public int difficultyModifier;
     public Transform Playerpos;
     // Added Enemypos transform
     public Transform Enemypos;

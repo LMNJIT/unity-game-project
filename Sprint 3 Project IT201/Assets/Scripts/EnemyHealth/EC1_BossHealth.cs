@@ -7,14 +7,16 @@ using UnityEngine.UI;
 
 public class EC1_BossHealth : MonoBehaviour
 {
+    public int difficultyModifier = 1; 
     public int Health = 300;
-    public int damage = 20;
+    public int damage = 40;
     public GameObject Enemy;
     public AudioSource EnemyHit;
     public TextMeshProUGUI Currency;
     public int EnemyVal;
     int curr;
     public GameObject BossSlain;
+    public GameObject CampBlocker;
 
     void Start() {
         BossSlain.SetActive(false);
@@ -25,6 +27,7 @@ public class EC1_BossHealth : MonoBehaviour
             BossSlain.SetActive(true);
             Destroy(BossSlain, 10);
             Destroy(Enemy);
+            Destroy(CampBlocker);
         }
         curr = int.Parse(Currency.text);
     }

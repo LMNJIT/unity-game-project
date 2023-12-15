@@ -7,8 +7,9 @@ using UnityEngine.UI;
 
 public class EC3_MinorHealth : MonoBehaviour
 {
-    public int Health = 100;
-    public int damage = 20;
+    public int difficultyModifier = 1; 
+    public int Health = 160;
+    public int damage = 30;
     public GameObject Enemy;
     public AudioSource EnemyHit;
     public TextMeshProUGUI Currency;
