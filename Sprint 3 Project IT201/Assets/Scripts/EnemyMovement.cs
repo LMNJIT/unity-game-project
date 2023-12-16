@@ -4,34 +4,41 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
-
-// add bruenian equation or w/e to make them randomly walk around
-
 public class EnemyMovement : MonoBehaviour
 {
     public int difficultyModifier;
-    public Transform Playerpos;
-    // Added Enemypos transform
-    public Transform Enemypos;
-    // Added Petpos Transform
-    public Transform Petpos;
     public int LookRadius;
+    public Transform Playerpos;
+    public Transform Enemypos;
+    public Transform Petpos;
     Vector3 baseLocation;
     NavMeshAgent agent;
-    // Start is called before the first frame update
+    Animator animate;
     void Start() {
+        // Grab NavMeshAgent and the Animator, and also set the enemy's spawn location
         agent = GetComponent<NavMeshAgent>();
-        baseLocation = Enemypos.position;
+        animate = GetComponent<Animator>();
+        baseLocation = transform.position;
     }
 
-    // Update is called once per frame
     void Update() {
-        // Added a check for distance between Player and Enemy
-        if ((Vector3.Distance(Playerpos.position, Enemypos.position) < LookRadius) || (Vector3.Distance(Petpos.position, Enemypos.position) < LookRadius)) {
-            agent.destination = Playerpos.position; 
+        // Check for look radius
+        if (Vector3.Distance(Playerpos.position, Enemypos.position) < LookRadius/* || (Vector3.Distance(Petpos.position, Enemypos.position) < LookRadius)*/) {
+            // Set the enemy so that it starts moving towards the player's position (updated every frame)
+            agent.SetDestination(Playerpos.position);
+
+            // Play the running animation so it isn't just levitating tgowarsd the player
+            animate.Play("RunForward");
         }
+
+        else if (Vector3.Distance(baseLocation, Enemypos.position) > 1.0f) {
+            // Make it so the enemy moves back to it's spawn
+            agent.SetDestination(baseLocation);
+        }
+
         else {
-            agent.destination = baseLocation;
+            // Set the enemy to idle animation when not doing anything
+            animate.Play("Idle");
         }
     }
 }

@@ -17,17 +17,20 @@ public class Tutorial : MonoBehaviour
         TutorialText3.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update() {
         TutorialText1.SetActive(false);
         TutorialText2.SetActive(false);
         TutorialText3.SetActive(false);
+
+        // If player is near the particle, the text displays on their screen.
         if (Vector3.Distance(Player.position,Particle1.position) < 5) {
             TutorialText1.SetActive(true);
         }
+
         if (Vector3.Distance(Player.position,Particle2.position) < 5) {
             TutorialText2.SetActive(true);
         }
+
         if (Vector3.Distance(Player.position,Particle3.position) < 5) {
             TutorialText3.SetActive(true);
         }

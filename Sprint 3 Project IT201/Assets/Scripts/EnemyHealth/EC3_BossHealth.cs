@@ -10,29 +10,37 @@ public class EC3_BossHealth : MonoBehaviour
     public int difficultyModifier = 1; 
     public int Health = 600;
     public int damage = 50;
-    public GameObject Enemy;
-    public AudioSource EnemyHit;
-    public TextMeshProUGUI Currency;
     public int EnemyVal;
     int curr;
+    public GameObject Enemy;
     public GameObject BossSlain;
     public GameObject CampBlocker;
+    public AudioSource EnemyHit;
+    public TextMeshProUGUI Currency;
 
     void Start() {
         BossSlain.SetActive(false);
     }
     void Update() {
+        // Destroys them if they die
         if (Health <= 0) {
+            // Updates texts
             Currency.text = (curr+EnemyVal).ToString();
             BossSlain.SetActive(true);
-            Destroy(BossSlain, 10);
+
+            // Clears enemy objects and text object
+            Destroy(BossSlain, 3);
             Destroy(Enemy);
             Destroy(CampBlocker);
+
+            // Pauses game since they won
+            Time.timeScale = 0;
         }
         curr = int.Parse(Currency.text);
     }
 
     void OnTriggerEnter (Collider other) {
+        // Checks that they're being shot by an arrow
         if (other.gameObject.tag == "Arrow") {
             Health -= damage;
             EnemyHit.Play();

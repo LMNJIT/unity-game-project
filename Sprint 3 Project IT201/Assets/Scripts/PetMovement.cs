@@ -7,15 +7,13 @@ public class PetMovement : MonoBehaviour
 {
     public Transform Playerpos;
     NavMeshAgent agent;
-    // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
+        // Grab NavMeshAgent
         agent = GetComponent<NavMeshAgent>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update() {
+        // Make the pet hover around the player's location
         agent.destination = Playerpos.position - new Vector3(5,0,5);
     }
 }
