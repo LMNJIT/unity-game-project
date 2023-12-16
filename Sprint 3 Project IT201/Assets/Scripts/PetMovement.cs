@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class PetMovement : MonoBehaviour
 {
     public Transform Petpos;
-    public Transform Enemypos;
+   // public Transform Enemypos;
     public Transform Playerpos;
     Animation animate;
 
@@ -19,22 +19,19 @@ public class PetMovement : MonoBehaviour
 
     void Update() {
         // Make the pet hover around the player's location
-        if (Vector3.Distance(Petpos.position, Enemypos.position) < LookRadius) {
+       /* if (Vector3.Distance(Petpos.position, Enemypos.position) < LookRadius) {
             // Set the pet so that it starts moving towards the enemy's position (updated every frame)
             agent.SetDestination(Enemypos.position);
 
-            // Play the running animation so it isn't just levitating tgowarsd the player
-            animate.Play("RunForward");
-        }
+        }*/
 
-        else if (Vector3.Distance(Petpos.position, Playerpos.position) > 5.0f) {
-            // Make it so the enemy moves back to it's spawn
-            agent.SetDestination(Playerpos.position - new Vector3(5,0,5));
+        if (Vector3.Distance(Petpos.position, Playerpos.position) > 5.0f) {
+            // Make it so the pet follows the player
+            agent.SetDestination(Playerpos.position);
         }
 
         else {
-            // Set the enemy to idle animation when not doing anything
-            animate.Play("Idle");
+            agent.SetDestination(transform.position);
         }
     }
 }

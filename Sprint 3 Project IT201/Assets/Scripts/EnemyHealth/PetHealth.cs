@@ -9,18 +9,15 @@ public class PetHealth : MonoBehaviour
 {
     public int difficultyModifier = 1; 
     public int Health = 600;
-    public int damage = 20;
     int curr;
     public GameObject Pet;
     public AudioSource PetHit;
-    public TextMeshProUGUI Currency;
 
     void Update() {
-        // Destroys them if they die and updates currency
+        // Destroys them if they die 
         if (Health <= 0) {
             Destroy(Pet);
         }
-        curr = int.Parse(Currency.text);
     }
 
     void OnTriggerEnter (Collider other) {

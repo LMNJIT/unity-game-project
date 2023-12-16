@@ -29,7 +29,7 @@ public class EC2_MajorHealth : MonoBehaviour
     void OnTriggerEnter (Collider other) {
         // Checks that they're being shot by an arrow
         // Check that they are being shot by an arrow or attacked by pet
-        if (other.gameObject.tag == "Arrow" || other.gameObject.tag == "Pet") {
+        if (other.gameObject.tag == "Arrow") {
             Health -= damage;
             EnemyHit.Play();
         }

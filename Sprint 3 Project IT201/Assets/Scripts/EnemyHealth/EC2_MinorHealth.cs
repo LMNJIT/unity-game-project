@@ -16,7 +16,6 @@ public class EC2_MinorHealth : MonoBehaviour
     public AudioSource EnemyHit;
     public TextMeshProUGUI Currency;
 
-
     void Update() {
         // Destroys them if they die and updates currency
         if (Health <= 0) {
@@ -28,7 +27,7 @@ public class EC2_MinorHealth : MonoBehaviour
 
     void OnTriggerEnter (Collider other) {
         // Check that they are being shot by an arrow or attacked by pet
-        if (other.gameObject.tag == "Arrow" || other.gameObject.tag == "Pet") {
+        if (other.gameObject.tag == "Arrow") {
             Health -= damage;
             EnemyHit.Play();
         }

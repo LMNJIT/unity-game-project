@@ -24,11 +24,22 @@ public class EnemyMovement : MonoBehaviour
     void Update() {
         // Check for look radius
         if (Vector3.Distance(Playerpos.position, Enemypos.position) < LookRadius || (Vector3.Distance(Petpos.position, Enemypos.position) < LookRadius)) {
-            // Set the enemy so that it starts moving towards the player's position (updated every frame)
-            agent.SetDestination(Playerpos.position);
 
-            // Play the running animation so it isn't just levitating tgowarsd the player
-            animate.Play("RunForward");
+            // Check whether or not the player or pet is closer to decide who to chase
+            if (Vector3.Distance(Playerpos.position, Enemypos.position) < Vector3.Distance(Petpos.position, Enemypos.position)) {
+                // Set the enemy so that it starts moving towards the player's position (updated every frame)
+                agent.SetDestination(Playerpos.position);
+
+                // Play the running animation so it isn't just levitating tgowarsd the player
+                animate.Play("RunForward");
+            }
+
+            else {
+                agent.SetDestination(Petpos.position);
+
+                // Play the running animation so it isn't just levitating tgowarsd the player
+                animate.Play("RunForward");
+            }
         }
 
         else if (Vector3.Distance(baseLocation, Enemypos.position) > 1.0f) {

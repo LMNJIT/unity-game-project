@@ -20,7 +20,7 @@ public class Chest20 : MonoBehaviour
         // Instantaite text within the game which floats above the Chest GameObject,
         // and rotate said text so it faces the same way the Chest GameObject is facing
         // Also sets the text which will display when the chest is interacted with inactive
-        Vector3 aboveChestPosition = Chest.position + new Vector3(.5f, 1.5f, 0);
+        Vector3 aboveChestPosition = Chest.position + new Vector3(1f, 1.5f, 0);
         FloatingTextInstance = Instantiate(FloatingText, aboveChestPosition, Quaternion.identity);
         FloatingTextInstance.transform.rotation = Chest.rotation * Quaternion.Euler(0,180,0);
         ChestText.SetActive(false);

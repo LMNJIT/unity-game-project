@@ -35,8 +35,8 @@ public class Timer : MonoBehaviour
             if (time <= 0) {
                 timerText.text = "Timer: 0";
                 timerText.color = Color.black;
-                currText.color = Color.black;
-                currCurrText.color = Color.black;
+                //currText.color = Color.black;
+                //currCurrText.color = Color.black;
                 Time.timeScale = 0f;
                 lossText.text = "You lose!";
                 loss.SetActive(true);
@@ -45,14 +45,14 @@ public class Timer : MonoBehaviour
             // Self explantory...
             if (time < 150) {
                 timerText.color = Color.red;
-                currText.color = Color.red;
-                currCurrText.color = Color.red;
+                //currText.color = Color.red;
+                //currCurrText.color = Color.red;
             }
 
             if (time > 300) {
                 timerText.color = Color.yellow;
-                currText.color = Color.yellow;
-                currCurrText.color = Color.yellow;
+                //currText.color = Color.yellow;
+                //currCurrText.color = Color.yellow;
             }
 
             if (time > 450) {

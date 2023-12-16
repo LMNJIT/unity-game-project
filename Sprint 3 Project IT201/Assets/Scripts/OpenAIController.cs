@@ -4,6 +4,7 @@ using OpenAI_API.Models;
 using System;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
@@ -14,7 +15,9 @@ public class OpenAIController : MonoBehaviour
     public TMP_InputField inputField;
     public Button okButton;
     public GameObject petKnight;
+    public GameObject okButtonText;
     public GameObject Player;
+    public NavMeshAgent petKnightAgent;
     private OpenAIAPI api;
     private List<ChatMessage> messages;
 
@@ -23,6 +26,7 @@ public class OpenAIController : MonoBehaviour
     {
         // This line gets your API key (and could be slightly different on Mac/Linux)
         api = new OpenAIAPI("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");
+        api = new OpenAIAPI("YOUR_KEY_HERE");
 
         StartConversation();
         okButton.onClick.AddListener(() => GetResponse());
@@ -34,6 +38,9 @@ public class OpenAIController : MonoBehaviour
         textField.gameObject.SetActive(false);
         inputField.gameObject.SetActive(false);
         okButton.gameObject.SetActive(false);
+
+        // Disable petKnight movement till it agrees to work with player
+        petKnightAgent.enabled = !petKnightAgent.enabled;
     }
 
     private void OnInputFieldEndEdit(string text)
@@ -71,11 +78,11 @@ public class OpenAIController : MonoBehaviour
     private void StartConversation()
     {
         messages = new List<ChatMessage> {
-            new ChatMessage(ChatMessageRole.System, "You are an honorable, friendly knight who is open to working with new adventurers. You will only work for someone who has defeated the Slime King. You will not work for anyone who has not yet defeated the Slime King. You keep your responses short and to the point. THIS IS VERY IMPORTANT: If you agree to work for someone, you will say exactly this: 'I will work for you, noble adventurer! Let's go out and clear the three camps of enemies!'.")
+            new ChatMessage(ChatMessageRole.System, "You are an honorable, friendly slime who is open to working with new adventurers. You will only work for someone who has defeated the Slime King. You will not work for anyone who has not yet defeated the Slime King. You keep your responses short and to the point. THIS IS VERY IMPORTANT: If you agree to work for someone, you will say exactly this: 'I will work for you, noble adventurer! Let's go out and clear the three camps of enemies!'. Do not say ANYTHING besides this exact statement if you agree to work for someone.")
         };
 
         inputField.text = "";
-        string startString = "You have just approached the only knight in the village. To start typing, press '/'. To send your message, press enter.";
+        string startString = "You have just approached the only friendly slime in the village. To start typing, press '/'. To send your message, press enter.";
         textField.text = startString;
         Debug.Log(startString);
     }
@@ -115,7 +122,7 @@ public class OpenAIController : MonoBehaviour
         {
             Model = Model.ChatGPTTurbo,
             Temperature = 0.9,
-            MaxTokens = 50,
+            MaxTokens = 100,
             Messages = messages
         });
 
@@ -126,10 +133,22 @@ public class OpenAIController : MonoBehaviour
         Debug.Log(string.Format("{0}: {1}", responseMessage.rawRole, responseMessage.Content));
 
         // Check if the guard's message exactly matches the desired string
-        if (responseMessage.Role == ChatMessageRole.System && responseMessage.Content.Trim() == "I will work for you, noble adventurer! Let's go out and clear the three camps of enemies!")
+        if (responseMessage.Content == "I will work for you, noble adventurer! Let's go out and clear the three camps of enemies!")
         {
-            petKnight.GetComponent<NavMeshAgent>().SetActive(true);
-            
+            // Allow slime to move!
+            petKnightAgent.enabled = !petKnightAgent.enabled;
+
+            // Clear out UI
+            Destroy(textField, 5);
+            Destroy(inputField, 5);
+            Destroy(inputField.image,5);
+            Destroy(okButton, 5);
+            Destroy(okButton.image,5);
+            Destroy(inputField.placeholder,5);
+            Destroy(okButtonText,5);
+
+
+            //THE BUTTON AND INPUTFIELD STILL APPEAR BUT TEXTFIELD GOES AWAY
         }
 
 
@@ -137,7 +156,7 @@ public class OpenAIController : MonoBehaviour
         messages.Add(responseMessage);
 
         // Update the text field with the response
-        textField.text = string.Format("You: {0}\n\nGuard: {1}", userMessage.Content, responseMessage.Content);
+        textField.text = string.Format("You: {0}\n\nSlime: {1}", userMessage.Content, responseMessage.Content);
 
         // Re-enable the OK button
         okButton.enabled = true;
