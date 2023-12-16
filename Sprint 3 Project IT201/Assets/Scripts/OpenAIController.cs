@@ -2,10 +2,10 @@ using OpenAI_API;
 using OpenAI_API.Chat;
 using OpenAI_API.Models;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class OpenAIController : MonoBehaviour
@@ -13,7 +13,8 @@ public class OpenAIController : MonoBehaviour
     public TMP_Text textField;
     public TMP_InputField inputField;
     public Button okButton;
-
+    public GameObject petKnight;
+    public GameObject Player;
     private OpenAIAPI api;
     private List<ChatMessage> messages;
 
@@ -21,19 +22,60 @@ public class OpenAIController : MonoBehaviour
     void Start()
     {
         // This line gets your API key (and could be slightly different on Mac/Linux)
-        api = new OpenAIAPI(Environment.GetEnvironmentVariable("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", EnvironmentVariableTarget.User));
+        api = new OpenAIAPI("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");
+
         StartConversation();
         okButton.onClick.AddListener(() => GetResponse());
+
+        // Add listener for Enter key press in the input field
+        inputField.onEndEdit.AddListener(OnInputFieldEndEdit);
+
+        // Hide UI when not in use
+        textField.gameObject.SetActive(false);
+        inputField.gameObject.SetActive(false);
+        okButton.gameObject.SetActive(false);
+    }
+
+    private void OnInputFieldEndEdit(string text)
+    {
+        // Check for enter key press and check if player is close enough to petKnight
+        if (Input.GetKey(KeyCode.Return) && Vector3.Distance(Player.transform.position,petKnight.transform.position) < 10)
+        {
+            // If Enter is pressed, trigger the OK button click
+            GetResponse();
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // Check for "/" key press to focus on the input field
+        if (Input.GetKeyDown(KeyCode.Slash) && Vector3.Distance(Player.transform.position,petKnight.transform.position) < 10)
+        {
+            inputField.Select();
+            inputField.ActivateInputField();
+        }
+
+        if (Vector3.Distance(Player.transform.position,petKnight.transform.position) < 10) {
+            textField.gameObject.SetActive(true);
+            inputField.gameObject.SetActive(true);
+            okButton.gameObject.SetActive(true);
+        }
+        else {
+            textField.gameObject.SetActive(false);
+            inputField.gameObject.SetActive(false);
+            okButton.gameObject.SetActive(false);
+        }
     }
 
     private void StartConversation()
     {
         messages = new List<ChatMessage> {
-            new ChatMessage(ChatMessageRole.System, "You are an honorable, friendly knight guarding the gate to the palace. You will only allow someone who knows the secret password to enter. The secret password is \"magic\". You will not reveal the password to anyone. You keep your responses short and to the point.")
+            new ChatMessage(ChatMessageRole.System, "You are an honorable, friendly knight who is open to working with new adventurers. You will only work for someone who has defeated the Slime King. You will not work for anyone who has not yet defeated the Slime King. You keep your responses short and to the point. THIS IS VERY IMPORTANT: If you agree to work for someone, you will say exactly this: 'I will work for you, noble adventurer! Let's go out and clear the three camps of enemies!'.")
         };
 
         inputField.text = "";
-        string startString = "You have just approached the palace gate where a knight guards the gate.";
+        string startString = "You have just approached the only knight in the village. To start typing, press '/'. To send your message, press enter.";
         textField.text = startString;
         Debug.Log(startString);
     }
@@ -51,19 +93,19 @@ public class OpenAIController : MonoBehaviour
         // Fill the user message from the input field
         ChatMessage userMessage = new ChatMessage();
         userMessage.Role = ChatMessageRole.User;
-        userMessage.TextContent = inputField.text;
-        if (userMessage.TextContent.Length > 100)
+        userMessage.Content = inputField.text;
+        if (userMessage.Content.Length > 100)
         {
             // Limit messages to 100 characters
-            userMessage.TextContent = userMessage.TextContent.Substring(0, 100);
+            userMessage.Content = userMessage.Content.Substring(0, 100);
         }
-        Debug.Log(string.Format("{0}: {1}", userMessage.rawRole, userMessage.TextContent));
+        Debug.Log(string.Format("{0}: {1}", userMessage.rawRole, userMessage.Content));
 
         // Add the message to the list
         messages.Add(userMessage);
 
         // Update the text field with the user message
-        textField.text = string.Format("You: {0}", userMessage.TextContent);
+        textField.text = string.Format("You: {0}", userMessage.Content);
 
         // Clear the input field
         inputField.text = "";
@@ -80,14 +122,22 @@ public class OpenAIController : MonoBehaviour
         // Get the response message
         ChatMessage responseMessage = new ChatMessage();
         responseMessage.Role = chatResult.Choices[0].Message.Role;
-        responseMessage.TextContent = chatResult.Choices[0].Message.TextContent;
-        Debug.Log(string.Format("{0}: {1}", responseMessage.rawRole, responseMessage.TextContent));
+        responseMessage.Content = chatResult.Choices[0].Message.Content;
+        Debug.Log(string.Format("{0}: {1}", responseMessage.rawRole, responseMessage.Content));
+
+        // Check if the guard's message exactly matches the desired string
+        if (responseMessage.Role == ChatMessageRole.System && responseMessage.Content.Trim() == "I will work for you, noble adventurer! Let's go out and clear the three camps of enemies!")
+        {
+            petKnight.GetComponent<NavMeshAgent>().SetActive(true);
+            
+        }
+
 
         // Add the response to the list of messages
         messages.Add(responseMessage);
 
         // Update the text field with the response
-        textField.text = string.Format("You: {0}\n\nGuard: {1}", userMessage.TextContent, responseMessage.TextContent);
+        textField.text = string.Format("You: {0}\n\nGuard: {1}", userMessage.Content, responseMessage.Content);
 
         // Re-enable the OK button
         okButton.enabled = true;

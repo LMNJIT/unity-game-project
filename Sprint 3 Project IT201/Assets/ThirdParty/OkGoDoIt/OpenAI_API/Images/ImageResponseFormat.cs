@@ -15,11 +15,11 @@ namespace OpenAI_API.Images
 		private string Value { get; set; }
 
 		/// <summary>
-		/// Returns a URL to the image on a server
+		/// Requests an image that is 256x256
 		/// </summary>
 		public static ImageResponseFormat Url { get { return new ImageResponseFormat("url"); } }
 		/// <summary>
-		/// Gets the image base as a base64-encoded JSON string
+		/// Requests an image that is 512x512
 		/// </summary>
 		public static ImageResponseFormat B64_json { get { return new ImageResponseFormat("b64_json"); } }
 

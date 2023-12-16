@@ -23,7 +23,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Update() {
         // Check for look radius
-        if (Vector3.Distance(Playerpos.position, Enemypos.position) < LookRadius/* || (Vector3.Distance(Petpos.position, Enemypos.position) < LookRadius)*/) {
+        if (Vector3.Distance(Playerpos.position, Enemypos.position) < LookRadius || (Vector3.Distance(Petpos.position, Enemypos.position) < LookRadius)) {
             // Set the enemy so that it starts moving towards the player's position (updated every frame)
             agent.SetDestination(Playerpos.position);
 

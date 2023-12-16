@@ -55,8 +55,8 @@ public class EC1_BossHealth : MonoBehaviour
     }
 
     void OnTriggerEnter (Collider other) {
-        // Check that they are being shot by an arrow
-        if (other.gameObject.tag == "Arrow") {
+        // Check that they are being shot by an arrow or attacked by pet
+        if (other.gameObject.tag == "Arrow" || other.gameObject.tag == "Pet") {
             Health -= damage;
             EnemyHit.Play();
         }

@@ -10,6 +10,7 @@ TagManager:
   - Boss
   - Minor
   - Major
+  - Pet
   layers:
   - Default
   - TransparentFX
