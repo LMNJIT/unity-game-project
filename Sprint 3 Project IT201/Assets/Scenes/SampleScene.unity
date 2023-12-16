@@ -390,12 +390,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 9978762}
   ChestObject: {fileID: 9978761}
+  ChestText: {fileID: 1546965376}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 1546965376}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!64 &9978765
@@ -460,10 +460,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 19166372}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &19166375
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -541,10 +541,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 19166373}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!1 &22819389 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8210207690257594047, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
@@ -570,10 +570,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 22819389}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &22819392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -651,10 +651,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 22819390}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!4 &23157445 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4334607510651894, guid: 83ac38058f039f1408fd16ab5074a51b, type: 3}
@@ -747,10 +747,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 30
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 23184887}
   Petpos: {fileID: 0}
-  LookRadius: 30
 --- !u!114 &23184892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,10 +766,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 200
   damage: 20
+  EnemyVal: 30
   Enemy: {fileID: 23184886}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 30
 --- !u!1001 &23295010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -789,7 +789,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -816,7 +816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8843755518075579397, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.01
+      value: -14.252
       objectReference: {fileID: 0}
     - target: {fileID: 8843755518075579397, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1477,10 +1477,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 55257530}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &55257533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1558,10 +1558,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 55257531}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!1001 &55608975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1765,12 +1765,12 @@ MonoBehaviour:
   Player: {fileID: 1817335996}
   Chest: {fileID: 67413648}
   ChestObject: {fileID: 67413647}
+  ChestText: {fileID: 1612951097}
   FloatingText: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 1612951097}
   chestVal: 20
 --- !u!64 &67413651
 MeshCollider:
@@ -1957,10 +1957,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 73593722}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &73593725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2038,10 +2038,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 73593723}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!4 &74359196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4902702773148040, guid: 451d60a1dd6ddf749ba1fb0e2e6d3992, type: 3}
@@ -2205,10 +2205,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 30
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 81442791}
   Petpos: {fileID: 0}
-  LookRadius: 30
 --- !u!114 &81442796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2224,10 +2224,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 200
   damage: 20
+  EnemyVal: 30
   Enemy: {fileID: 81442790}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 30
 --- !u!1001 &82449449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2564,7 +2564,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2682,10 +2682,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 107858567}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &107858570
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2763,10 +2763,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 107858568}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!1001 &108827755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3102,10 +3102,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 120232642}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!114 &120232647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3121,10 +3121,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 140
   damage: 20
+  EnemyVal: 15
   Enemy: {fileID: 120232641}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 15
 --- !u!1001 &120492962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3247,10 +3247,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 121120116}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &121120119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3328,10 +3328,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 121120117}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!4 &123619473 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
@@ -3792,7 +3792,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3892,7 +3892,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -4413,12 +4413,12 @@ MonoBehaviour:
   Player: {fileID: 1817335996}
   Chest: {fileID: 162417793}
   ChestObject: {fileID: 162417792}
+  ChestText: {fileID: 1614717099}
   FloatingText: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 1614717099}
   chestVal: 20
 --- !u!64 &162417796
 MeshCollider:
@@ -5022,10 +5022,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 189327312}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!114 &189327317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5041,10 +5041,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 140
   damage: 20
+  EnemyVal: 15
   Enemy: {fileID: 189327311}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 15
 --- !u!1001 &190941754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5285,10 +5285,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 199487199}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &199487202
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5366,10 +5366,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 199487200}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!1001 &205189900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6200,7 +6200,7 @@ GameObject:
   - component: {fileID: 243608470}
   - component: {fileID: 243608471}
   m_Layer: 0
-  m_Name: PlayerHit
+  m_Name: playerHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7812,10 +7812,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 330992380}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!114 &330992385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7831,10 +7831,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 140
   damage: 20
+  EnemyVal: 15
   Enemy: {fileID: 330992379}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 15
 --- !u!1001 &331470929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7926,7 +7926,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -7953,7 +7953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8843755518075579397, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.01
+      value: -14.18
       objectReference: {fileID: 0}
     - target: {fileID: 8843755518075579397, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8194,10 +8194,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 345977114}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!114 &345977119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8213,10 +8213,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 140
   damage: 20
+  EnemyVal: 15
   Enemy: {fileID: 345977113}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 15
 --- !u!1 &346201836 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5310977999046209156, guid: 5ae47e2a4552a8644a1b8072d5044023, type: 3}
@@ -8668,10 +8668,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 371171159}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &371171162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8749,10 +8749,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 371171160}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!1001 &371828923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8836,10 +8836,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 50
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 372598937}
   Petpos: {fileID: 0}
-  LookRadius: 50
 --- !u!195 &372598939
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8940,19 +8940,19 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 300
   damage: 20
-  Enemy: {fileID: 372598936}
-  EnemyHit: {fileID: 728446429}
-  Currency: {fileID: 1871928263}
   EnemyVal: 100
+  Enemy: {fileID: 372598936}
   BossSlain: {fileID: 1146439300}
   CampBlocker: {fileID: 1965534365}
+  ChestText: {fileID: 1884545549}
+  TP: {fileID: 0}
+  EnemyHit: {fileID: 728446429}
+  Currency: {fileID: 1871928263}
   playerFollow: {fileID: 1498151619}
   playerCapsule: {fileID: 274884109}
   MainCamera: {fileID: 62833890}
   referenceHealth: {fileID: 1817336005}
   referenceArrow: {fileID: 1958223792}
-  ChestText: {fileID: 1884545549}
-  TP: {fileID: 780623764}
 --- !u!4 &375047753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5925433674301824424, guid: f593bc20677ebf14abd27a4853408c68, type: 3}
@@ -8968,6 +8968,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6783764687984081796, guid: 776312af8c275ff4fb7b3a4a3d9d75fe, type: 3}
   m_PrefabInstance: {fileID: 930264873}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &382444858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 382444861}
+  - component: {fileID: 382444860}
+  - component: {fileID: 382444859}
+  m_Layer: 0
+  m_Name: Terrain_(-1500.00, 0.00, 0.00)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!154 &382444859
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382444858}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_TerrainData: {fileID: 15600000, guid: a5f3cb803360a1a48a9c658c1983737d, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &382444860
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382444858}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: a5f3cb803360a1a48a9c658c1983737d, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 2000
+  m_TreeCrossFadeLength: 200
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 1000
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_IgnoreQualitySettings: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ReceiveGI: 1
+  m_ScaleInLightmap: 0.033049457
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+  m_EnableHeightmapRayTracing: 1
+  m_EnableTreesAndDetailsRayTracing: 0
+  m_TreeMotionVectorModeOverride: 3
+--- !u!4 &382444861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382444858}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2264.9604, y: 88.94159, z: 451.42294}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1944814219}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &384945013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9298,7 +9390,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -9578,12 +9670,12 @@ MonoBehaviour:
   Player: {fileID: 1817335996}
   Chest: {fileID: 408331679}
   ChestObject: {fileID: 408331678}
+  ChestText: {fileID: 545694304}
   FloatingText: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 545694304}
   chestVal: 20
 --- !u!64 &408331682
 MeshCollider:
@@ -9694,10 +9786,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 411220589}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!114 &411220594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9713,10 +9805,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 140
   damage: 20
+  EnemyVal: 15
   Enemy: {fileID: 411220588}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 15
 --- !u!1001 &412543995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9836,12 +9928,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 416212588}
   ChestObject: {fileID: 416212587}
+  ChestText: {fileID: 346201836}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 346201836}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!65 &416212591
@@ -10174,10 +10266,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 447958506}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!195 &447958508
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10257,10 +10349,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 447958504}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!1 &458842806 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1313218985878354, guid: 5240fb00498ea65418f8fd579be1b24d, type: 3}
@@ -11262,7 +11354,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -11975,10 +12067,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 30
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 517401427}
   Petpos: {fileID: 0}
-  LookRadius: 30
 --- !u!114 &517401432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11994,10 +12086,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 200
   damage: 20
+  EnemyVal: 30
   Enemy: {fileID: 517401426}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 30
 --- !u!1001 &520208638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12602,12 +12694,12 @@ MonoBehaviour:
   Player: {fileID: 1817335996}
   Chest: {fileID: 553819806}
   ChestObject: {fileID: 553819805}
+  ChestText: {fileID: 114771856}
   FloatingText: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 114771856}
   chestVal: 20
 --- !u!65 &553819809
 BoxCollider:
@@ -13441,7 +13533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1363430800198003926, guid: 23f907c94ad92894495c02b43a563c6f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.306648
+      value: -14.082
       objectReference: {fileID: 0}
     - target: {fileID: 1363430800198003926, guid: 23f907c94ad92894495c02b43a563c6f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13993,10 +14085,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 595394502}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &595394505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14074,10 +14166,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 595394503}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!1001 &597063963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14344,12 +14436,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 615635877}
   ChestObject: {fileID: 615635876}
+  ChestText: {fileID: 605461726}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 605461726}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!64 &615635879
@@ -15458,10 +15550,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 30
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 670958028}
   Petpos: {fileID: 0}
-  LookRadius: 30
 --- !u!114 &670958033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15477,10 +15569,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 200
   damage: 20
+  EnemyVal: 30
   Enemy: {fileID: 670958027}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 30
 --- !u!1 &671319237 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1909391443988240, guid: 451d60a1dd6ddf749ba1fb0e2e6d3992, type: 3}
@@ -16099,7 +16191,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -16126,7 +16218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8843755518075579397, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.01
+      value: -14.22
       objectReference: {fileID: 0}
     - target: {fileID: 8843755518075579397, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16485,10 +16577,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 689943029}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!114 &689943034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16504,10 +16596,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 140
   damage: 20
+  EnemyVal: 15
   Enemy: {fileID: 689943028}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 15
 --- !u!1 &690213562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2549054593802932585, guid: bee651b89d6b3ef48b19cfe8a4c9fa42, type: 3}
@@ -16873,7 +16965,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -16990,7 +17082,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -17612,10 +17704,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 30
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 729102586}
   Petpos: {fileID: 0}
-  LookRadius: 30
 --- !u!114 &729102591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17631,10 +17723,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 200
   damage: 20
+  EnemyVal: 30
   Enemy: {fileID: 729102585}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 30
 --- !u!1 &730419031 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 1bd586063c947cd458e4c81b5e0f1141, type: 3}
@@ -17873,7 +17965,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -17972,7 +18064,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2050422235}
     m_Modifications:
     - target: {fileID: 1906508016798784, guid: 00a1229f10e9c6149ac5df04dcaff904, type: 3}
       propertyPath: m_Name
@@ -17984,15 +18076,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4566927031494226, guid: 00a1229f10e9c6149ac5df04dcaff904, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 134.15668
+      value: -599.2855
       objectReference: {fileID: 0}
     - target: {fileID: 4566927031494226, guid: 00a1229f10e9c6149ac5df04dcaff904, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 101.95963
+      value: -27.911613
       objectReference: {fileID: 0}
     - target: {fileID: 4566927031494226, guid: 00a1229f10e9c6149ac5df04dcaff904, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 372.16904
+      value: 362.86307
       objectReference: {fileID: 0}
     - target: {fileID: 4566927031494226, guid: 00a1229f10e9c6149ac5df04dcaff904, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18564,37 +18656,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4250148257203738, guid: 7a539eaaa6af1ea408e63531b7aa00de, type: 3}
   m_PrefabInstance: {fileID: 1373652303}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &780623764
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 780623765}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &780623765
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780623764}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 642.08, y: 101.21, z: 92.94}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &782517559
 GameObject:
   m_ObjectHideFlags: 0
@@ -18652,7 +18713,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Knight's King Slain! The Skeleton's Gate is open!
+  m_text: Knight King Slain! The Skeleton's Gate is open!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82db9169a8c10c842a2f3bdf99e1d1a0, type: 2}
   m_sharedMaterial: {fileID: -4302378092401206598, guid: 82db9169a8c10c842a2f3bdf99e1d1a0, type: 2}
@@ -19403,7 +19464,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -20461,10 +20522,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 857666592}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &857666595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20542,10 +20603,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 857666593}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!1 &858018203
 GameObject:
   m_ObjectHideFlags: 0
@@ -25743,7 +25804,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -25847,7 +25908,7 @@ GameObject:
   - component: {fileID: 864923193}
   - component: {fileID: 864923192}
   m_Layer: 0
-  m_Name: arrow
+  m_Name: arrowHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26247,10 +26308,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 884855705}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &884855708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26328,10 +26389,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 884855706}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!1001 &888507883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27068,7 +27129,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -32365,10 +32426,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1926188643}
-  loss: {fileID: 856937301}
   lossText: {fileID: 856937303}
   currText: {fileID: 1555155050}
   currCurrText: {fileID: 1871928263}
+  loss: {fileID: 856937301}
   time: 600
 --- !u!4 &930613284
 Transform:
@@ -32577,10 +32638,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 937388397}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &937388400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32658,10 +32719,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 937388398}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!1 &937971664 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1909391443988240, guid: 451d60a1dd6ddf749ba1fb0e2e6d3992, type: 3}
@@ -33426,12 +33487,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 978878189}
   ChestObject: {fileID: 978878188}
+  ChestText: {fileID: 1170391013}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 1170391013}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!64 &978878192
@@ -33618,12 +33679,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 982098750}
   ChestObject: {fileID: 982098749}
+  ChestText: {fileID: 1907195557}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 1907195557}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!64 &982098753
@@ -33847,10 +33908,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 30
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 986406547}
   Petpos: {fileID: 0}
-  LookRadius: 30
 --- !u!114 &986406552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33866,10 +33927,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 200
   damage: 20
+  EnemyVal: 30
   Enemy: {fileID: 986406546}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 30
 --- !u!1001 &986469612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33987,10 +34048,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 987745200}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &987745203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34068,10 +34129,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 987745201}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!1001 &988806987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34251,10 +34312,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 30
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 989129242}
   Petpos: {fileID: 0}
-  LookRadius: 30
 --- !u!114 &989129247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34270,10 +34331,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 200
   damage: 20
+  EnemyVal: 30
   Enemy: {fileID: 989129241}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 30
 --- !u!4 &989800654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4425563577357856, guid: b4c3c543415a6a343afbf5b5197e29df, type: 3}
@@ -34651,12 +34712,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 998504525}
   ChestObject: {fileID: 998504524}
+  ChestText: {fileID: 406954881}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 406954881}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!64 &998504528
@@ -35495,12 +35556,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 1031266782}
   ChestObject: {fileID: 1031266781}
+  ChestText: {fileID: 1549885726}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 1549885726}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!64 &1031266785
@@ -36292,10 +36353,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 1068400206}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &1068400209
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36373,10 +36434,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1068400207}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!4 &1069548472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 654684864805361010, guid: 4202bcf0261b7184381139880446dfd6, type: 3}
@@ -36494,10 +36555,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 1075273782}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &1075273785
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36575,10 +36636,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1075273783}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!1 &1076593201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1909391443988240, guid: 451d60a1dd6ddf749ba1fb0e2e6d3992, type: 3}
@@ -37051,7 +37112,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -37407,10 +37468,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 1118437880}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &1118437883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37488,10 +37549,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1118437881}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!1 &1120303828 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1023694174533684, guid: cfdb553db06896145850bddaa6ce8d07, type: 3}
@@ -38201,7 +38262,7 @@ GameObject:
   - component: {fileID: 1150561090}
   - component: {fileID: 1150561091}
   m_Layer: 0
-  m_Name: jump
+  m_Name: jumpAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38937,6 +38998,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1906508016798784, guid: 00a1229f10e9c6149ac5df04dcaff904, type: 3}
   m_PrefabInstance: {fileID: 744907905}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1187187355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4566927031494226, guid: 00a1229f10e9c6149ac5df04dcaff904, type: 3}
+  m_PrefabInstance: {fileID: 744907905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1187187356
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39108,10 +39174,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 1192588735}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &1192588738
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39189,10 +39255,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1192588736}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!1001 &1195452857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40285,7 +40351,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Skeleton's King Slain! You have beaten the game!
+  m_text: Skeleton King Slain! You have beaten the game!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 82db9169a8c10c842a2f3bdf99e1d1a0, type: 2}
   m_sharedMaterial: {fileID: -4302378092401206598, guid: 82db9169a8c10c842a2f3bdf99e1d1a0, type: 2}
@@ -40715,10 +40781,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 1247736351}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &1247736354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40796,10 +40862,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1247736352}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!1001 &1253489581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40951,7 +41017,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -41074,10 +41140,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 1268639171}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &1268639174
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41155,10 +41221,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1268639172}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!1001 &1271418020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41485,10 +41551,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1282947361}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!114 &1282947366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41504,10 +41570,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 140
   damage: 20
+  EnemyVal: 15
   Enemy: {fileID: 1282947360}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 15
 --- !u!1 &1282948169 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1890848134327038, guid: 2b7904da682466046a7e79f72dc25abb, type: 3}
@@ -41761,10 +41827,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 30
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1294205677}
   Petpos: {fileID: 0}
-  LookRadius: 30
 --- !u!114 &1294205682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41780,10 +41846,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 200
   damage: 20
+  EnemyVal: 30
   Enemy: {fileID: 1294205676}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 30
 --- !u!4 &1294377407 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6783764687984081796, guid: 776312af8c275ff4fb7b3a4a3d9d75fe, type: 3}
@@ -41814,10 +41880,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 1296517946}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &1296517949
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41895,10 +41961,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1296517947}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!4 &1298497075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2894652416639355859, guid: bee651b89d6b3ef48b19cfe8a4c9fa42, type: 3}
@@ -42652,10 +42718,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 1338005357}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &1338005360
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42733,10 +42799,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1338005358}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!1001 &1339678165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42843,7 +42909,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -42988,10 +43054,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 1347864116}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &1347864119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43069,10 +43135,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1347864117}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!1 &1350774549 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1788740219248336238, guid: ed8afbe6c16882343b99dd5c2a5d1530, type: 3}
@@ -43120,12 +43186,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 1350774550}
   ChestObject: {fileID: 1350774549}
+  ChestText: {fileID: 1492915889}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 1492915889}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!64 &1350774553
@@ -44235,10 +44301,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1385950414}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!114 &1385950419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44254,10 +44320,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 140
   damage: 20
+  EnemyVal: 15
   Enemy: {fileID: 1385950413}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 15
 --- !u!1001 &1393435672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44440,7 +44506,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -45772,10 +45838,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 1441653588}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &1441653591
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45853,10 +45919,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1441653589}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!1 &1441964204 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1859167926961738, guid: 7a539eaaa6af1ea408e63531b7aa00de, type: 3}
@@ -46045,7 +46111,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -46353,10 +46419,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1452071370}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!114 &1452071375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46372,10 +46438,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 140
   damage: 20
+  EnemyVal: 15
   Enemy: {fileID: 1452071369}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 15
 --- !u!1001 &1453128344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51400,12 +51466,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 1459130670}
   ChestObject: {fileID: 1459130669}
+  ChestText: {fileID: 191825561}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 191825561}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!64 &1459130673
@@ -51887,7 +51953,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -52067,10 +52133,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1482816873}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!114 &1482816878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52086,10 +52152,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 140
   damage: 20
+  EnemyVal: 15
   Enemy: {fileID: 1482816872}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 15
 --- !u!4 &1483982672 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8094022143358900169, guid: 236ebbb6fa8a57d4eae0a27017c0e294, type: 3}
@@ -52752,10 +52818,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 1504198219}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &1504198222
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52833,10 +52899,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1504198220}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!1001 &1512928494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53171,12 +53237,12 @@ MonoBehaviour:
   Player: {fileID: 1817335996}
   Chest: {fileID: 1538923377}
   ChestObject: {fileID: 1538923376}
+  ChestText: {fileID: 157998558}
   FloatingText: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 157998558}
   chestVal: 20
 --- !u!64 &1538923380
 MeshCollider:
@@ -53435,6 +53501,37 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 707946885}
   m_SourcePrefab: {fileID: 100100000, guid: 2b7904da682466046a7e79f72dc25abb, type: 3}
+--- !u!1 &1547435094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547435095}
+  m_Layer: 0
+  m_Name: HireMeAsYourTA?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1547435095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547435094}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 202.64362, y: 1009.57135, z: 34.271866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1549885726 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5310977999046209156, guid: 5ae47e2a4552a8644a1b8072d5044023, type: 3}
@@ -53728,10 +53825,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1554423881}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!114 &1554423886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53747,10 +53844,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 140
   damage: 20
+  EnemyVal: 15
   Enemy: {fileID: 1554423880}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 15
 --- !u!1 &1555155048
 GameObject:
   m_ObjectHideFlags: 0
@@ -53785,7 +53882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -765.2, y: 400}
+  m_AnchoredPosition: {x: -765.2, y: 450}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1555155050
@@ -54195,10 +54292,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 1566109184}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &1566109187
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54276,10 +54373,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1566109185}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!1 &1567457050 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1909391443988240, guid: 451d60a1dd6ddf749ba1fb0e2e6d3992, type: 3}
@@ -54492,10 +54589,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1576444064}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!114 &1576444062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54511,10 +54608,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 140
   damage: 20
+  EnemyVal: 15
   Enemy: {fileID: 1576444057}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 15
 --- !u!4 &1576444064 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1363430800198003926, guid: 23f907c94ad92894495c02b43a563c6f, type: 3}
@@ -55333,12 +55430,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 1613641715}
   ChestObject: {fileID: 1613641714}
+  ChestText: {fileID: 1762502695}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 1762502695}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!65 &1613641718
@@ -55559,7 +55656,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -55861,12 +55958,12 @@ MonoBehaviour:
   Player: {fileID: 1817335996}
   Chest: {fileID: 1628443712}
   ChestObject: {fileID: 1628443711}
+  ChestText: {fileID: 2145197955}
   FloatingText: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 2145197955}
   chestVal: 20
 --- !u!64 &1628443715
 MeshCollider:
@@ -56711,12 +56808,12 @@ MonoBehaviour:
   Player: {fileID: 1817335996}
   Chest: {fileID: 1667473499}
   ChestObject: {fileID: 1667473498}
+  ChestText: {fileID: 1611487245}
   FloatingText: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: e591bdcff9f0f6147856f6c7bbe05d0e, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 1611487245}
   chestVal: 20
 --- !u!64 &1667473502
 MeshCollider:
@@ -56976,7 +57073,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -57859,10 +57956,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 1712407809}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &1712407812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57940,10 +58037,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1712407810}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!4 &1712984422 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4431311970385536, guid: 738ea1fdff256574dad1bc9c67c5f8e1, type: 3}
@@ -58023,10 +58120,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 1720061546}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &1720061549
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58104,10 +58201,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1720061547}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!1001 &1720267963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58127,7 +58224,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -58440,10 +58537,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 160
   damage: 20
+  EnemyVal: 20
   Enemy: {fileID: 1733438906}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 20
 --- !u!65 &1733438909
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58521,10 +58618,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 20
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1733438907}
   Petpos: {fileID: 0}
-  LookRadius: 20
 --- !u!1 &1737815559 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1846530523549185644, guid: 23f907c94ad92894495c02b43a563c6f, type: 3}
@@ -58612,10 +58709,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 30
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1737815560}
   Petpos: {fileID: 0}
-  LookRadius: 30
 --- !u!114 &1737815565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58631,10 +58728,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 200
   damage: 20
+  EnemyVal: 30
   Enemy: {fileID: 1737815559}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 30
 --- !u!1001 &1738657989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59053,12 +59150,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 1752820558}
   ChestObject: {fileID: 1752820557}
+  ChestText: {fileID: 2102552438}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 2102552438}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!65 &1752820561
@@ -59101,7 +59198,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -59128,7 +59225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8843755518075579397, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.01
+      value: -14.16
       objectReference: {fileID: 0}
     - target: {fileID: 8843755518075579397, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -59359,7 +59456,7 @@ GameObject:
   - component: {fileID: 1759872923}
   - component: {fileID: 1759872924}
   m_Layer: 0
-  m_Name: MusicLoop
+  m_Name: musicAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59558,7 +59655,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -59755,7 +59852,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -60489,7 +60586,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -62246,7 +62343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -456.2, y: 400}
+  m_AnchoredPosition: {x: -456.2, y: 450}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871928263
@@ -62452,7 +62549,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -63434,10 +63531,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 30
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1917751665}
   Petpos: {fileID: 0}
-  LookRadius: 30
 --- !u!114 &1917751670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63453,10 +63550,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 200
   damage: 20
+  EnemyVal: 30
   Enemy: {fileID: 1917751664}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 30
 --- !u!1 &1918994311 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1890848134327038, guid: 2b7904da682466046a7e79f72dc25abb, type: 3}
@@ -63557,12 +63654,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 1919302590}
   ChestObject: {fileID: 1919302589}
+  ChestText: {fileID: 853989859}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 853989859}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!64 &1919302593
@@ -63816,7 +63913,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 172, y: -52}
+  m_AnchoredPosition: {x: 169.2, y: -52}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1926363878 stripped
@@ -63866,12 +63963,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 1926363879}
   ChestObject: {fileID: 1926363878}
+  ChestText: {fileID: 2044730581}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 2044730581}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!64 &1926363882
@@ -64259,7 +64356,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -64495,6 +64592,7 @@ Transform:
   - {fileID: 561322188}
   - {fileID: 1244854688}
   - {fileID: 1668977862}
+  - {fileID: 382444861}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1945716565 stripped
@@ -64601,7 +64699,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -64750,9 +64848,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c27a49ce52ee143ae11ae5fd40077d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 0.05
   arrow1: {fileID: 6436654260211229742, guid: a5ff22d83125e3b498a2cfd3471104ae, type: 3}
   arrowNoise: {fileID: 864923192}
+  distance: 0.05
   lastArrowTime: 0.5
   arrowSpeed: 0.5
 --- !u!4 &1958223793
@@ -64803,7 +64901,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2050422235}
     m_Modifications:
     - target: {fileID: 1353167768364658, guid: 9d5020896759df44f9c483176cc3a697, type: 3}
       propertyPath: m_Name
@@ -64819,15 +64917,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4904519213338514, guid: 9d5020896759df44f9c483176cc3a697, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 104.19
+      value: -629.2522
       objectReference: {fileID: 0}
     - target: {fileID: 4904519213338514, guid: 9d5020896759df44f9c483176cc3a697, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 106.96442
+      value: -22.90683
       objectReference: {fileID: 0}
     - target: {fileID: 4904519213338514, guid: 9d5020896759df44f9c483176cc3a697, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 75.55559
+      value: 66.2496
       objectReference: {fileID: 0}
     - target: {fileID: 4904519213338514, guid: 9d5020896759df44f9c483176cc3a697, type: 3}
       propertyPath: m_LocalRotation.w
@@ -64875,6 +64973,11 @@ PrefabInstance:
 --- !u!1 &1965534365 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1353167768364658, guid: 9d5020896759df44f9c483176cc3a697, type: 3}
+  m_PrefabInstance: {fileID: 1965534364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1965534366 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4904519213338514, guid: 9d5020896759df44f9c483176cc3a697, type: 3}
   m_PrefabInstance: {fileID: 1965534364}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &1965534367
@@ -64945,10 +65048,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 1966255006}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &1966255009
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65026,10 +65129,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1966255007}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!4 &1966362327 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4359283589267320, guid: 5240fb00498ea65418f8fd579be1b24d, type: 3}
@@ -65405,10 +65508,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 240
   damage: 20
+  EnemyVal: 40
   Enemy: {fileID: 1979370796}
   EnemyHit: {fileID: 1706602513}
   Currency: {fileID: 1871928263}
-  EnemyVal: 40
 --- !u!65 &1979370799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65486,10 +65589,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 25
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 1979370797}
   Petpos: {fileID: 0}
-  LookRadius: 25
 --- !u!4 &1980452572 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4250148257203738, guid: 7a539eaaa6af1ea408e63531b7aa00de, type: 3}
@@ -65689,7 +65792,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -66370,7 +66473,7 @@ PrefabInstance:
     - target: {fileID: 3196280426804442751, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 1d6615e592724564e836d1a9f0071e48, type: 2}
+      objectReference: {fileID: 9100000, guid: 6e9f7d23aaf9b4a4aa92311f4d6fd929, type: 2}
     - target: {fileID: 3287342108826680835, guid: 4921fcd859a7b0c45848c5f54d6077ad, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -67399,7 +67502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -763, y: 450}
+  m_AnchoredPosition: {x: -763, y: 400}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2024624198
@@ -67881,10 +67984,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 30
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 2040602141}
   Petpos: {fileID: 0}
-  LookRadius: 30
 --- !u!114 &2040602146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67900,10 +68003,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 200
   damage: 20
+  EnemyVal: 30
   Enemy: {fileID: 2040602140}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 30
 --- !u!1 &2041433718 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1353167768364658, guid: 9d5020896759df44f9c483176cc3a697, type: 3}
@@ -68121,6 +68224,8 @@ Transform:
   - {fileID: 622043381}
   - {fileID: 984897576}
   - {fileID: 1801012706}
+  - {fileID: 1965534366}
+  - {fileID: 1187187355}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2050807687
@@ -68323,10 +68428,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 50
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 2055221013}
   Petpos: {fileID: 0}
-  LookRadius: 50
 --- !u!114 &2055221020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68342,12 +68447,12 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 600
   damage: 50
-  Enemy: {fileID: 2055221012}
-  EnemyHit: {fileID: 1706602513}
-  Currency: {fileID: 1871928263}
   EnemyVal: 5000
+  Enemy: {fileID: 2055221012}
   BossSlain: {fileID: 1243380915}
   CampBlocker: {fileID: 0}
+  EnemyHit: {fileID: 1706602513}
+  Currency: {fileID: 1871928263}
 --- !u!4 &2057716881 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3287948611943350881, guid: 0f3d14a9a6b2ceb469c15d151552a614, type: 3}
@@ -68825,12 +68930,12 @@ MonoBehaviour:
   Player: {fileID: 274884109}
   Chest: {fileID: 2090806510}
   ChestObject: {fileID: 2090806509}
+  ChestText: {fileID: 1557263756}
   FloatingText: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   FloatingTextInstance: {fileID: 8912984111024412852, guid: 2fc39a91cd901424db75d79a2cac01c4, type: 3}
   ChestOpen: {fileID: 67879908}
   referenceArrow: {fileID: 1958223792}
   referenceHealth: {fileID: 1817336005}
-  ChestText: {fileID: 1557263756}
   FPS: {fileID: 1239532234}
   chestVal: 5
 --- !u!64 &2090806513
@@ -69084,10 +69189,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 30
   Playerpos: {fileID: 274884109}
   Enemypos: {fileID: 2099639406}
   Petpos: {fileID: 0}
-  LookRadius: 30
 --- !u!114 &2099639411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69103,10 +69208,10 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 200
   damage: 20
+  EnemyVal: 30
   Enemy: {fileID: 2099639405}
   EnemyHit: {fileID: 243608471}
   Currency: {fileID: 1871928263}
-  EnemyVal: 30
 --- !u!4 &2100494559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4902702773148040, guid: 451d60a1dd6ddf749ba1fb0e2e6d3992, type: 3}
@@ -69300,10 +69405,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyModifier: 0
+  LookRadius: 50
   Playerpos: {fileID: 2106658896}
   Enemypos: {fileID: 274884109}
   Petpos: {fileID: 0}
-  LookRadius: 50
 --- !u!114 &2106658901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69319,15 +69424,15 @@ MonoBehaviour:
   difficultyModifier: 1
   Health: 450
   damage: 20
-  Enemy: {fileID: 2106658895}
-  EnemyHit: {fileID: 243608471}
-  Currency: {fileID: 1871928263}
   EnemyVal: 200
+  Enemy: {fileID: 2106658895}
+  ChestText: {fileID: 527439858}
   BossSlain: {fileID: 782517559}
   CampBlocker: {fileID: 1187187354}
+  EnemyHit: {fileID: 243608471}
+  Currency: {fileID: 1871928263}
   referenceHealth: {fileID: 1817336005}
   referenceArrow: {fileID: 1958223792}
-  ChestText: {fileID: 527439858}
 --- !u!1001 &2108620149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70265,6 +70370,4 @@ SceneRoots:
   - {fileID: 676789212}
   - {fileID: 1486281395}
   - {fileID: 1595949175}
-  - {fileID: 1965534364}
-  - {fileID: 744907905}
-  - {fileID: 780623765}
+  - {fileID: 1547435095}
