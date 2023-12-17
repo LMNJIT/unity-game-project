@@ -25,7 +25,6 @@ public class OpenAIController : MonoBehaviour
     void Start()
     {
         // This line gets your API key (and could be slightly different on Mac/Linux)
-        api = new OpenAIAPI("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");
         api = new OpenAIAPI("YOUR_KEY_HERE");
 
         StartConversation();
